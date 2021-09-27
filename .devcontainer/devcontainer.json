@@ -1,0 +1,13 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "dev",
+    "runArgs": [
+        "--userns=keep-id",
+        "--volume=${localWorkspaceFolder}:/workspace:Z"
+    ],
+    "workspaceFolder": "/workspace",
+    "workspaceMount": ""
+}
+
